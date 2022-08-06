@@ -56,19 +56,6 @@ const Hotel=()=> {
                     </div>
                 ))
             }
-            {/* <div className="hotel-item" key = {1}>
-                <Row>
-                    <Col xs={3}>
-                        <img src={hotels.hotels[0].optimizedThumbUrls.srpDesktop}/>
-                    </Col>
-                    <Col xs={6}>
-                        <h4>{hotels.hotels[0].name}</h4>
-                    </Col>
-                    <Col xs={3}>
-                        <Rating name="read-only" value={hotels.hotels[0].starRating} readOnly />
-                    </Col>
-                </Row>
-            </div> */}
         </>
     );
 }
