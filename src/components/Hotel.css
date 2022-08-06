@@ -1,16 +1,18 @@
 .hotel-item {
-    padding: 5px;
+    padding: 5px 0;
     max-width: 900px;
+    width: 100%;
     margin:5px auto;
     border: 1px solid grey;
+    box-sizing: border-box;
 }
 
 .hotel-item img {
     width: 100%;
 }
-
-.hotel-description {
-    float: left;
+.row {
+    margin-right: unset !important;
+    margin-left: unset !important;
 }
 
 .carousel-item {
@@ -24,4 +26,16 @@
 }
 .carousel-indicators {
     display: none !important;
+}
+@media only screen and (max-width: 900px) {
+    .hotel-item {
+        width: 90%;
+    }
+    
+}
+@media only screen and (max-width: 576px) {
+    .carousel-item {
+        height: 200px;
+    }
+    
 }

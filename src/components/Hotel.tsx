@@ -43,19 +43,32 @@ const Hotel=()=> {
                 hotels.hotels.map((hotel, index) => (
                     <div className="hotel-item" key = {index}>
                         <Row>
-                            <Col xs={3}>
+                            <Col sm={3}>
                                 <img src={hotel.optimizedThumbUrls.srpDesktop}/>
                             </Col>
-                            <Col xs={6}>
+                            <Col sm={6}>
                                 <h4>{hotel.name}</h4>
                             </Col>
-                            <Col xs={3}>
+                            <Col sm={3}>
                                 <Rating name="read-only" value={hotel.starRating} readOnly />
                             </Col>
                         </Row>
                     </div>
                 ))
             }
+            {/* <div className="hotel-item" key = {1}>
+                <Row>
+                    <Col xs={3}>
+                        <img src={hotels.hotels[0].optimizedThumbUrls.srpDesktop}/>
+                    </Col>
+                    <Col xs={6}>
+                        <h4>{hotels.hotels[0].name}</h4>
+                    </Col>
+                    <Col xs={3}>
+                        <Rating name="read-only" value={hotels.hotels[0].starRating} readOnly />
+                    </Col>
+                </Row>
+            </div> */}
         </>
     );
 }
