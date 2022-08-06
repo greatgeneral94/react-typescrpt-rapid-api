@@ -1,0 +1,27 @@
+.hotel-item {
+    padding: 5px;
+    max-width: 900px;
+    margin:5px auto;
+    border: 1px solid grey;
+}
+
+.hotel-item img {
+    width: 100%;
+}
+
+.hotel-description {
+    float: left;
+}
+
+.carousel-item {
+    height: 300px;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-indicators {
+    display: none !important;
+}
