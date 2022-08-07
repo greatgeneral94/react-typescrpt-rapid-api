@@ -3,7 +3,7 @@ import axios from 'axios';
 
 
 export default{
-    async getAllHotels(){
+    async getAllHotels(checkin:string, checkout:string, adult:string){
 
         const options = {
             method: 'GET',
@@ -12,15 +12,15 @@ export default{
                 destinationId: '1506246',
                 pageNumber: '1',
                 pageSize: '25',
-                checkIn: '2022-03-03',
-                checkOut: '2022-08-05',
-                adults1: '1',
+                checkIn: checkin,
+                checkOut: checkout,
+                adults1: adult,
                 sortOrder: 'PRICE',
                 locale: 'en_US',
                 currency: 'USD'
             },
             headers: {
-                'X-RapidAPI-Key': '3ab49482b3msh83ad2ad75bdd4d1p187a14jsn2eb437a14d4b',
+                'X-RapidAPI-Key': '29c138cfa3msh8a143866b9acee8p13f5f5jsnb197751649f0',
                 'X-RapidAPI-Host': 'hotels4.p.rapidapi.com'
             }
         };
