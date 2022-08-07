@@ -87,7 +87,7 @@ const Hotel=()=> {
             {
                 hotels.loaded&&<Box sx={{ flexGrow: 1 }} className = "filter-container">
                     <Grid container spacing={2}>
-                        <Grid item xs={6} md={6}>
+                        <Grid item sm={6}>
                             <LocalizationProvider
                                 dateAdapter={AdapterDateFns}
                                 localeText={{ start: 'Check-in', end: 'Check-out' }}
@@ -108,7 +108,7 @@ const Hotel=()=> {
                                 />
                             </LocalizationProvider>
                         </Grid>
-                        <Grid item xs={6} md={6}>
+                        <Grid item sm={6}>
                             <span>Adults:</span>
                             <Button variant="outlined" onClick={()=>changeAdults(1)}><AddIcon/></Button>
                             <span>{adults}</span>
