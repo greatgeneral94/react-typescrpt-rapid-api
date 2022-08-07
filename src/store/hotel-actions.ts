@@ -10,6 +10,7 @@ export const hotelActions=hotelSlice.actions
 
 export const getHotels=(checkin:string, checkout:string, adult:string):ThunkAction<void,RootState,unknown,AnyAction>=>{
     return async(dispatch,getState)=>{
+        dispatch(hotelActions.setPreloader());
         const response:IHotelModel[]=await HotelService.getAllHotels(checkin, checkout, adult);
         dispatch(hotelActions.setHotels(response));
     }

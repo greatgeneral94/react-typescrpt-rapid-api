@@ -21,5 +21,7 @@ export interface IHotelModel {
 //     countryName: string;
 // }
 export interface HotelArrayModel {
-    hotels: IHotelModel[]
+    hotels: IHotelModel[],
+    loaded: boolean,
+    preloader: boolean
 }

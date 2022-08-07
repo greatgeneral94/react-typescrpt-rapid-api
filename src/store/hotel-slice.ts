@@ -20,7 +20,9 @@ const initialHotelState:HotelArrayModel={
                 srpDesktop: ""
             }
         }
-    ]
+    ],
+    loaded: false,
+    preloader: true
 }
 
 const hotelSlice=createSlice({
@@ -29,6 +31,11 @@ const hotelSlice=createSlice({
     reducers:{
         setHotels(state,action:PayloadAction<IHotelModel[]>){
             state.hotels=action.payload;
+            state.loaded = true;
+            state.preloader = false;
+        },
+        setPreloader(state){
+            state.preloader = true;
         }
     }
 })
